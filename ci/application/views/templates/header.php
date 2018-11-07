@@ -8,4 +8,4 @@
         </head>
         <body>
             <div class="container">
-                  <a href="https://ci-recipes-archive-team10-n7pete00.c9users.io/ci/index.php">  <h1><?php echo $title; ?></h1></a>
+                  <a href="<?php echo base_url() ?>">  <h1><?php echo $title; ?></h1></a>

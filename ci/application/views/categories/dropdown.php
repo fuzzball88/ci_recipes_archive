@@ -8,21 +8,11 @@
 			</div> 
 	</div>
 -->
-	
-	
-	
-	
-	
-		
-			<div class="form-group">
+				<div class="form-group">
 				<label for="category">Category</label>
 				 <?php 
 				 $attributes = 'class="form-control" id="category"';
             	 echo form_dropdown('category', $category, set_value('category'), $attributes); ?>
-				
-				
-				
-					
 					<!--
 					<option value="1">Starters</option>
 					<option value="2">Main courses</option>

@@ -29,6 +29,7 @@
 			<div class="form-group">
 				<select class="form-control" name="category_id" value="<?php echo $recipe['category_id'] ?>">
 					
+					<option selected value="<?php echo $recipe['category_id'] ?>">Current category: <?php echo $category['title']?></option>
 					<option value="1">Starters</option>
 					<option value="2">Main courses</option>
 					<option value="3">Desserts</option>
@@ -103,7 +104,7 @@
 			<input class="p-3 mb-2 bg-primary text-white" type="submit" value="update" name="submit">
 		</div>
 		<div class="col-md-2">
-			<a class="text-primary" href="https://ci-recipes-archive-team10-n7pete00.c9users.io/ci/index.php/recipes/">Back to main page</a>
+			<a class="text-primary" href="<?php echo base_url() ?>index.php/recipes/">Back to main page</a>
 		</div>
 	</div>
 	<?php echo form_close(); ?>

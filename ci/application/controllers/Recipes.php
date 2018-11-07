@@ -175,7 +175,7 @@ class Recipes extends CI_Controller
 		$data['title']= "Recipes Archive";
 		$data['recipe'] = $this->recipe_model->get_recipe($id);
 		$recipe = $this->recipe_model->get_recipe($id);
-		$data['category'] = $this->category_model->get_categories();
+		$data['category'] = $this->category_model->get_categories($recipe['category_id']);
 		
 		$this->form_validation->set_rules('title','Title','required');
         $this->form_validation->set_rules('category_id','Category_id','required');

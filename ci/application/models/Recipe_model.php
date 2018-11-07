@@ -21,6 +21,9 @@ class Recipe_model extends CI_Model
 
     /**
     * this function is getting the recipe/s from the database 
+    * 
+    * @param int, user id
+    * @return array
     */
     public function get_recipe($id = NULL) 
     {
@@ -31,6 +34,9 @@ class Recipe_model extends CI_Model
     
     /**
     * this function is getting the recipe from the database by category
+    * 
+    * @param category_id (int not null)
+    * @return array
     */
     public function get_recipes($category_id = NULL) 
     {
@@ -51,6 +57,9 @@ class Recipe_model extends CI_Model
     /**
     * this function is reading entered data and adds the new recipe to 
     * the database. 
+    * 
+    * @param    string(path of the upload image)
+    * @return   boolean
     */
     public function insert_recipe($imagepath = NULL) 
     {
@@ -68,6 +77,9 @@ class Recipe_model extends CI_Model
     /**
     * this function is reading the new entered data and updates the recipe 
     * to the database. 
+    * 
+    * @param    id(int  user id), image_path(string path of the upload image)
+    * @return   boolean
     */
     public function update_recipe($id = NULL,$image_path = NULL) 
     {
@@ -87,6 +99,9 @@ class Recipe_model extends CI_Model
     
     /**
     * this function is deleting the recipe from the database
+    * 
+    * @param int, user id
+    * @return boolean
     */
     public function delete_recipe($id) 
     {

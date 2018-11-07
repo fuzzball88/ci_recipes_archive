@@ -8,7 +8,7 @@
 	</div>
 	
 	<div class="row">
-		<div class="col-md-2"><a href="https://ci-recipes-archive-team10-n7pete00.c9users.io/ci/index.php/recipes/add" type="button" class="btn btn-info">Add new recipe</a></div>
+		<div class="col-md-2"><a href="<?php echo base_url() ?>index.php//recipes/add" type="button" class="btn btn-info">Add new recipe</a></div>
 		  
 		<div class="col-md-10"></div>
 	</div> 
@@ -19,7 +19,7 @@
 	<div class="row">
 		<div class="col-md-4">
 			<?php foreach ($recipe as $recipe_item): ?>
-				<a class="btn btn-outline-info" href="https://ci-recipes-archive-team10-n7pete00.c9users.io/ci/index.php/recipes/view/<?php echo $recipe_item['id'] ?>"><?php echo $recipe_item['title']; ?></a>
+				<a class="btn btn-outline-info" href="<?php echo base_url() ?>index.php/recipes/view/<?php echo $recipe_item['id'] ?>"><?php echo $recipe_item['title']; ?></a>
 				<br/>
 			<?php endforeach; ?>
 		</div>
