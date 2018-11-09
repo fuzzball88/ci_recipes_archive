@@ -90,12 +90,12 @@
 	
 	<div class="row">
 		<div class="col-md-4">
-			<a type="button" class="btn btn-info" href="<?php echo base_url() ?>index.php/recipes/edit/<?php echo $recipe['id'] ?>">edit</a>
+			<a type="button" class="btn btn-info" href="<?php echo site_url() ?>/recipes/edit/<?php echo $recipe['id'] ?>">edit</a>
 		</div>
 		<div class="col-md-4">
-			<a type="button" class="btn btn-info" href="<?php echo base_url() ?>index.php/recipes/delete_recipe/<?php echo $recipe['id'] ?>">delete</a>
+			<a type="button" class="btn btn-info" href="<?php echo site_url() ?>/recipes/delete_recipe/<?php echo $recipe['id'] ?>">delete</a>
 		</div>
 		<div class="col-md-4">
-			<a class="btn btn-info" href="<?php echo base_url() ?>index.php/recipes/">Back to main page</a>
+			<a class="btn btn-info" href="<?php echo site_url() ?>/recipes/">Back to main page</a>
 		</div>
 	</div>

@@ -104,7 +104,7 @@
 			<input class="p-3 mb-2 bg-primary text-white" type="submit" value="update" name="submit">
 		</div>
 		<div class="col-md-2">
-			<a class="text-primary" href="<?php echo base_url() ?>index.php/recipes/">Back to main page</a>
+			<a class="text-primary" href="<?php echo site_url() ?>/recipes/">Back to main page</a>
 		</div>
 	</div>
 	<?php echo form_close(); ?>

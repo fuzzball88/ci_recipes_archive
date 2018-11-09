@@ -8,4 +8,4 @@
         </head>
         <body>
             <div class="container">
-                  <a href="<?php echo base_url() ?>">  <h1><?php echo $title; ?></h1></a>
+                  <a href="<?php echo site_url() ?>">  <h1><?php echo $title; ?></h1></a>
